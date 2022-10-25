@@ -19,6 +19,12 @@ function User({name, surName, age, friends, isLoggedIn}) {
     </>
   )
 }
+User.PropTypes = {
+    name: PropTypes.string.isRequired,
+    surName: PropTypes.string.isRequired,
+    isLoggedIn: PropTypes.bool.isRequired
+
+}
 User.defaultProps ={
     isLoggedIn:false
 }

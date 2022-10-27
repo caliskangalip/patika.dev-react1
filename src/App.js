@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <User />
-      <CounterRow />
+      <User/>
+      <CounterRow/>
     </div>
   );
 }

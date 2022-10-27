@@ -7,11 +7,11 @@ function CounterRow() {
     const [day, setDay]=useState([]);
   return (
     <div>
-    <div>`Adım: {count} Tur: {tour} Günde: {day}`</div>
+    <div>Adım: {count} Tur: {tour} Günde: {day}</div>
     Console.log("Satır1")
-    <button onClick={setCount(count+1)}>Sayıcı</button>
-    <button onClick={setTour([...tour, count])}>Tur Tamamla</button>
-    <button onClick={setDay([...day, tour])}>Gün Bitir</button>
+    <button onClick={()=>setCount(count+1)}>Adım</button>
+    <button onClick={()=>setTour([...tour, "-",count])}>Tur</button>
+    <button onClick={()=>setDay([...day, "tour",tour])}>Bitiş</button>
     </div>
     
   )
